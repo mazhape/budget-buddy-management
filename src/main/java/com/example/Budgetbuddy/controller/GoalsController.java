@@ -14,15 +14,16 @@ public class GoalsController {
     @Autowired
     private GoalRepository goalRepository;
 
-    @PostMapping("/goals")
+    @PostMapping
     public ResponseEntity<String> setGoal(@RequestBody Goal goal) {
         goalRepository.save(goal);
         return ResponseEntity.ok("Goal set successfully");
     }
 
-    @GetMapping("/goals/{userId}")
+    @GetMapping("/{userId}")
     public ResponseEntity<List<Goal>> getGoals(@PathVariable Long userId) {
         List<Goal> goals = goalRepository.findByUserId(userId);
         return ResponseEntity.ok(goals);
     }
+
 }
