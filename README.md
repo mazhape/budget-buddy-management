@@ -25,12 +25,7 @@ Categorize expenses (e.g., groceries, entertainment).
 
 Track spending against budgets.
 
-3. Programmable Card Integration
-   Enforce spending limits for specific categories.
-
-Automate savings transfers.
-
-4. Dashboard
+3.Dashboard
    Visualize spending with charts (e.g., pie charts, bar graphs).
 
 Provide actionable insights and recommendations.
